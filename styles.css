@@ -8,3 +8,25 @@ body {
 
     overflow-x: hidden;
 }
+
+header, footer {
+    width: 100vw;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    padding: 5px;
+}
+
+header {
+    top: 0;
+    flex-direction: column;
+}
+
+footer {
+    bottom: 0;
+    flex-direction: row;
+}
