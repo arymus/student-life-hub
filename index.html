@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Arymus Reyes" />
+    <title>Student Life Hub</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Student Life Hub</h1>
+        <p>Slogan</p>
+        <nav>
+            <a href="#profile">Profile</a>
+            <a href="#classes">Classes</a>
+            <a href="#to-do"> To-Do</a>
+        </nav>
+    </header>
+    <main>
+        <section id="profile">
+            <h2>Student Profile</h2>
+            <h3>Basic Information</h3>
+            <form id="basic-info">
+                <input type="text" placeholder="First name" name="fname" />
+                <input type="text" placeholder="Last name" name="lname" />
+                <input type="number" placeholder="Grade" name="grade" />
+                <input type="submit" />
+            </form>
+            <p id="my-name"></p>
+            <p id="my-grade"></p>
+
+            <h3>More About Me</h3>
+            <form id="more-info">
+                <input type="text" placeholder="Hobbies" />
+                <input type="text" placeholder="Interests" />
+                <input type="submit" />
+            </form>
+            <p id="my-hobbies"></p>
+            <p id="my-interests"></p>
+        </section>
+        <section id="classes">
+            <h2>My Classes</h2>
+            <h3>Add a Class</h3>
+            <form id="schedule">
+                <input type="text" placeholder="Add a class" />
+                <input type="number" placeholder="Period" />
+                <input type="number" placeholder="Room number" />
+                <input type="text" placeholder="Teacher" />
+                <input type="submit" value="Add class" />
+            </form>
+
+            <h3>Schedule</h3>
+            <ol id="my-classes">
+
+            </ol>
+        </section>
+        <section id="to-do">
+            <h2>Weekly To-Do</h2>
+            <h3>Submit a task</h3>
+            <form id="tasks">
+                <input type="text" placeholder="Add a task" />
+                <input type="submit" value="Add task" />
+            </form>
+            <ul id="my-tasks">
+
+            </ul>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+<script src="script.js" type="text/js"></script>
+</html>
