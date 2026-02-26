@@ -11,7 +11,6 @@
 <body>
     <header>
         <h1>Student Life Hub</h1>
-        <p>Slogan</p>
         <nav>
             <a href="#profile">Profile</a>
             <a href="#classes">Classes</a>
@@ -30,55 +29,59 @@
                     <input type="submit" />
                 </form>
             </div>
-            <p id="my-name"></p>
-            <p id="my-grade"></p>
 
             <div id="more-info">
                 <h3>More About Me</h3>
                 <form>
-                    <input type="text" placeholder="Hobbies" />
-                    <input type="text" placeholder="Interests" />
+                    <textarea type="text" placeholder="My bio" name="bio"></textarea>
                     <input type="submit" />
                 </form>
             </div>
-            <p id="my-hobbies"></p>
-            <p id="my-interests"></p>
+            
+            <div id="about-me">
+              <p id="my-name"></p>
+              <p id="my-grade"></p>
+              <p id="my-bio"></p>
+            </div>
         </section>
+
         <section id="classes">
             <h2>My Classes</h2>
             <div id="schedule">
                 <h3>Add a Class</h3>
                 <form>
-                    <input type="text" placeholder="Add a class" />
-                    <input type="number" placeholder="Period" />
-                    <input type="number" placeholder="Room number" />
-                    <input type="text" placeholder="Teacher" />
+                    <input type="text" placeholder="Class name" name="className" />
+                    <input type="number" placeholder="Period" name="period" />
+                    <input type="number" placeholder="Room number" name="roomNumber" />
+                    <input type="text" placeholder="Teacher" name="teacher" />
                     <input type="submit" value="Add class" />
                 </form>
             </div>
 
             <h3>Schedule</h3>
-            <ol id="my-classes">
-
-            </ol>
+            <ol id="my-classes"></ol>
         </section>
+
         <section id="to-do">
             <h2>Weekly To-Do</h2>
             <div id="tasks">
                 <h3>Submit a task</h3>
                 <form>
-                    <input type="text" placeholder="Add a task" />
+                    <input type="text" placeholder="Task" name="taskName" />
                     <input type="submit" value="Add task" />
                 </form>
             </div>
-            <ul id="my-tasks">
-
-            </ul>
+            <ul id="my-tasks"></ul>
         </section>
     </main>
     <footer>
-
+      <p>&copy; Arymus Reyes 2026. All Rights Reserved.</p>
+      <nav>
+        <a href="https://github.com/arymus">GitHub</a>
+        <a href="https://github.com/arymus/student-life-hub">Source Code</a>
+        <a href="mailto:arymusr@gmail.com">Email</a>
+      </nav>
     </footer>
+    <script src="script.js" defer></script>
 </body>
-<script src="script.js" type="text/js"></script>
 </html>
