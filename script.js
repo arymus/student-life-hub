@@ -56,8 +56,7 @@ scheduleForm.addEventListener("submit", (event) => {
     roomNumber: +formData.get("roomNumber"),
     teacher: formData.get("teacher")
   };
-  
-  student.classes.push(newClass);
+
   const classListItem = document.createElement("li");
   classListItem.innerText = `${newClass.className}, ${newClass.teacher} ${newClass.roomNumber}, period ${newClass.period}`;
   classListItem.addEventListener("click", () => classListItem.remove());
